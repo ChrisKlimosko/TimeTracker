@@ -18,7 +18,7 @@ Designed specifically for **Wayland / GNOME** environments where most hotkey too
 - New log files created automatically each calendar day
 - Handles multiple keyboard devices (including gaming keyboards with duplicate interfaces)
 - Graceful shutdown with warnings for any sessions left open
-
+- Displays a status GUI to let you know when you're recording an event. Use --no-gui to disable this.
 ---
 
 ## Requirements
