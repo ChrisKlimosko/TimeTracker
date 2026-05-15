@@ -1,0 +1,16 @@
+[Unit]
+Description=Time Tracker – Productivity hotkey logger
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+# ── Update this path if you place time_tracker.py elsewhere ──
+ExecStart=/usr/bin/python3 -u %h/time_tracker/time_tracker.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:%h/time_tracker_logs/tracker_runtime.log
+StandardError=append:%h/time_tracker_logs/tracker_runtime.log
+
+[Install]
+WantedBy=graphical-session.target
